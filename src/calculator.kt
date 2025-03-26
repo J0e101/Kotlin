@@ -9,15 +9,14 @@ fun main() {
     println("Enter the second operand: ")
     var y = read.nextInt()
 
-    println("Enter operation('add', 'subtract', 'divide', 'multiply'): ")
+    println("Enter operation('+', '-', '*', '/'): ")
     var z = read.next()
 
     var ans = when(z){
-        "add" -> println(x + y)
-        "subtract" -> println(x - y)
-        "multiply" -> println(x * y)
-        "divide" -> println(x / y)
-        else -> println("Enter operator as stipulated in the example in the prompt message.")
+        "+" -> x + y
+        "-" -> x * y
+        "/" -> x / y
+        else -> "Enter operator as stipulated in the example in the prompt message."
     }
     println("The final answer is $ans!!!")
 
